@@ -1,6 +1,9 @@
 <h3>All Company Objectives and Key Results</h3>
 <br />
 
+//for each team, go through and 
+<% @teams.each do |team| %>
+
 <% @users.each do |user| %>
     <strong><%= user.name %></strong>
     <br />
@@ -15,6 +18,8 @@
     <% end %>
     </ol>
   	<br />
+<% end %>
+
 <% end %>
 <br />
 
