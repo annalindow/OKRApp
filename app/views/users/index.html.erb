@@ -1,8 +1,6 @@
 <h3>All Company Objectives and Key Results</h3>
 <br />
 
-<% @teams.each do |team| %>
-
 <% @users.each do |user| %>
     <strong><%= user.name %></strong>
     <br />
@@ -19,7 +17,6 @@
   	<br />
 <% end %>
 
-<% end %>
 <br />
 
 <%= link_to 'Back', objectives_path %>
