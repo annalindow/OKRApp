@@ -2,7 +2,7 @@ class TeamsController < ApplicationController
 before_filter :authenticate_user! 
 
   def index
-   @users = current_user.team.users.all
+   @team_users = current_user.team.users.all
 
     respond_to do |format|
       format.html # index.html.erb
